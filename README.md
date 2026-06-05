@@ -26,9 +26,10 @@ kết hợp Proxmox on-premise với AWS Cloud theo mô hình Pilot Light.
 1. VM Proxmox liên tục replication data lên AWS DRS
 2. Heartbeat script push metric lên CloudWatch mỗi 60 giây
 3. CloudWatch Alarm phát hiện VM sập trong 2 phút
-4. SNS trigger Lambda tự động
-5. Lambda kích hoạt DRS Recovery
+4. SNS trigger Lambda và Admin Mails tự động
+5. Lambda kích hoạt DRS Recovery và cập nhật lại IP sang Route 53
 6. EC2 Recovery Instance chạy lên trong 15-20 phút
+7. RDS được Lambda kích hoạt lên Promote Replica to Master
 
 # RPO & RTO
 1. RPO < 2 phút
