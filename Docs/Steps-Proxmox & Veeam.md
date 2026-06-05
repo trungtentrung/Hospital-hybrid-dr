@@ -29,3 +29,16 @@ Add storage cho PBS
 
 # Bước 3
 3:30 : tạo lịch backup cho PBS từ Proxmox VE
+
+## Veeam
+# Bước 1
+Vào managed server để add pve vào, mục đích để Veeam có quyền nhìn vào trong pve biết lấy dữ lieu ở đâu
+
+# Bước 2
+Cấu hình khởi tạo Veeam worker , tạo Veeam worker trên proxmox
+
+# Bước 3
+Tạo lập lịch trình sao lưu cho máy ảo trên proxmox
+
+# Bước 4
+Khai báo account vm để có thể khôi phục file
